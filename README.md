@@ -10,11 +10,11 @@ Database (sqlite3) = 🟢
 
 Auth = 🟡
 
+clientprofilerequest.srf = 🟡
+
 Online Contacts = 🟠
 
 Database (MSN Explorer) = 🔴
-
-clientprofilerequest.srf = 🔴
 
 Mail = 🔴 
 
