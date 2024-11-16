@@ -26,6 +26,28 @@ def clientpost():
                return '<?xml version="1.0" encoding="utf-8"?><LoginResponse Success="false"></LoginResponse>'
         except ET.ParseError as e:
             return str(e), 400
+
+@app.route("/login.live.com/ppsecure/ClientProfileRequest.srf", methods=['POST'])
+def ClientProfileRequest():
+     content_type = request.headers.get("Content-Type")
+     if content_type == "text/xml":
+        xml_data = request.data
+        try:
+            root = ET.fromstring(xml_data)
+            sign_in_name = root.find('.//SignInName').text
+            password = root.find('.//Password').text
+            with sqlite3.connect('user_system.db') as conn:
+              cursor = conn.cursor()
+              cursor.execute('''
+               SELECT * FROM users WHERE email = ? AND password = ?
+             ''', (sign_in_name, password))
+            result = cursor.fetchone()
+            if result:
+               return render_template('ClientProfileRequest.srf',sign_in_name=sign_in_name, password=password)
+            else:
+               return '<?xml version="1.0" encoding="utf-8"?><ProfileResponse Success="false"></ProfileResponse>'
+        except ET.ParseError as e:
+            return str(e), 400
      
 @app.route("/nexus.passport.com/client/client.xml")
 def client():
