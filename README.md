@@ -12,7 +12,7 @@ Auth = 🟡
 
 clientprofilerequest.srf = 🟡
 
-Online Contacts = 🟠
+Online Contacts*1 = 🟡
 
 Database (MSN Explorer) = 🔴
 
@@ -30,3 +30,5 @@ TBA
 ## Screenshots
 ![Screenshot_2024-11-16-20-53-00-99_bd2fa87f131fb0b19324075f10c34487](https://github.com/user-attachments/assets/db2308a3-ae7a-4dd5-b9d1-b7d1b5c052cb)
 
+## Note
+### 1:You need MSN Messenger Server to make works 
