@@ -25,9 +25,9 @@
 			<APIAssociationServerPK>https://api.login.live.com/pksecure/AssociationServerPK.srf</APIAssociationServerPK>
 			<APIAssociationServerWSDL>https://api.login.live.com/AssociationServerWSDL.srf</APIAssociationServerWSDL>
 			<Auth>http://login.live.com/login.srf</Auth>
-			<PPAuth>http://{{ ip }}:{{ port }}/login.live.com/login.srf</PPAuth>
-			<Auth1dot4>http://{{ ip }}:{{ port }}/login.live.com/login2.srf</Auth1dot4>
-			<PPAuthSecure>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
+			<PPAuth>http://{{ host }}/login.live.com/login.srf</PPAuth>
+			<Auth1dot4>http://{{ host }}/login.live.com/login2.srf</Auth1dot4>
+			<PPAuthSecure>http://{{ host }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
 			<AuthZServer>https://api.login.live.com/AuthorizationServer.srf</AuthZServer>
 			<AuthZServerPK>https://api.login.live.com/pksecure/AuthorizationServerPK.srf</AuthZServerPK>
 			<AuthZServerWSDL>https://api.login.live.com/AuthorizationServerWSDL.srf</AuthZServerWSDL>
@@ -43,16 +43,16 @@
 			<CookieDomain></CookieDomain>
 			<COPPAPOLICY>http://www.microsoft.com/account/default.aspx</COPPAPOLICY>
 			<COPPARelRequestResponse>https://accountservices.msn.com/ParentsIntro.srf</COPPARelRequestResponse>
-			<CustomerService>http://{{ ip }}:{{ port }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
-			<DAExpireCookie>http://{{ ip }}:{{ port }}/login.live.com/expirecookie.srf</DAExpireCookie>
-			<DigestLogin>http://{{ ip }}:{{ port }}/login.live.com/digest.srf</DigestLogin>
+			<CustomerService>http://{{ host }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
+			<DAExpireCookie>http://{{ host }}/login.live.com/expirecookie.srf</DAExpireCookie>
+			<DigestLogin>http://{{ host }}/login.live.com/digest.srf</DigestLogin>
 			<EditProfile>https://account.live.com/EditProf.aspx</EditProfile>
 			<EmailValidationUI>https://account.live.com/verifysi.aspx?lcid=1033</EmailValidationUI>
-			<HotmailSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
+			<HotmailSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
 			<KidsPassport>https://account.live.com/?lcid=1033&amp;dc=KidsPassport</KidsPassport>
 			<LogoUrl>https://auth.gfx.ms/clientlogo.bmp</LogoUrl>
-			<Logout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</Logout>
-			<PPLogout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</PPLogout>
+			<Logout>http://{{ host }}/login.live.com/logout.srf</Logout>
+			<PPLogout>http://{{ host }}/login.live.com/logout.srf</PPLogout>
 			<MPP>http://profiles.msn.com/</MPP>
 			<MPPEdit>http://profiles.msn.com/Edit.asp?lc=1033</MPPEdit>
 			<MSCDefaultValues>https://clientconfig.passport.net/GetMSCDefaultValues.srf</MSCDefaultValues>
@@ -65,10 +65,10 @@
 			<APIPassportSettingsServer>https://api.login.live.com/PPSettingsServer.srf</APIPassportSettingsServer>
 			<APIPassportSettingsServerPK>https://api.login.live.com/pksecure/PPSettingsServerPK.srf</APIPassportSettingsServerPK>
 			<APIPassportSettingsServerWSDL>https://api.login.live.com/PPSettingsServerWSDL.srf</APIPassportSettingsServerWSDL>
-			<PassportSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
-			<PasswordReset>http://{{ ip }}:{{ port }}/login.live.com/resetpw.srf</PasswordReset>
-			<PrivacyPolicy>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
-			<MsaStaticMe>http://{{ ip }}:{{ port }}/login.live.com/Me.htm</MsaStaticMe>
+			<PassportSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
+			<PasswordReset>http://{{ host }}/login.live.com/resetpw.srf</PasswordReset>
+			<PrivacyPolicy>http://{{ host }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
+			<MsaStaticMe>http://{{ host }}/login.live.com/Me.htm</MsaStaticMe>
 			<Registration>https://signup.live.com/signup?lcid=1033</Registration>
 			<MSASignup>https://signup.live.com/signup?lcid=1033</MSASignup>
 			<ServiceAPIAuthZServer>https://api.login.live.com/PPSAAuthz.srf</ServiceAPIAuthZServer>
@@ -132,19 +132,19 @@
 			<ServiceClass1RegistrationAuthorityWSDL>https://class1ra.passport.com/Cls1RAWSDL.srf</ServiceClass1RegistrationAuthorityWSDL>
 			<SignoutIconUrl>https://auth.gfx.ms/signouticon.bmp</SignoutIconUrl>
 			<XMLEditPassword>https://account.live.com/?lcid=1033&amp;dc=XMLEditPassword</XMLEditPassword>
-			<XMLLogin>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
-			<XMLLogout>http://{{ ip }}:{{ port }}/login.live.com/logoutxml.srf</XMLLogout>
-			<MobileXMLLogin>http://{{ ip }}:{{ port }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
-			<MobileXMLLogout>http://{{ ip }}:{{ port }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
-			<XMLProfileRequest>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
+			<XMLLogin>http://{{ host }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
+			<XMLLogout>http://{{ host }}/login.live.com/logoutxml.srf</XMLLogout>
+			<MobileXMLLogin>http://{{ host }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
+			<MobileXMLLogout>http://{{ host }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
+			<XMLProfileRequest>http://{{ host }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
 			<XMLRegistration>https://account.live.com/?lcid=1033&amp;dc=XMLRegistration</XMLRegistration>
 			<XMLResetPassword>https://account.live.com/?lcid=1033&amp;dc=XMLResetPassword</XMLResetPassword>
 			<XMLUpdate>https://account.live.com/?lcid=1033&amp;dc=XMLUpdate</XMLUpdate>
-			<LWAAuth>http://{{ ip }}:{{ port }}/login.live.com/wlogin.srf</LWAAuth>
+			<LWAAuth>http://{{ host }}/login.live.com/wlogin.srf</LWAAuth>
 			<MobileServerAuth>https://mid.live.com/si/default.aspx</MobileServerAuth>
 			<MobileServerLogout>https://mid.live.com/si/logout.aspx</MobileServerLogout>
 			<MobileProxy>1</MobileProxy>
-			<MobilePost>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/post.srf</MobilePost>
+			<MobilePost>http://{{ host }}/login.live.com/ppsecure/post.srf</MobilePost>
 			<MobileReg>https://account.live.com/?lcid=1033&amp;dc=MobileReg</MobileReg>
 		</Domain>
 		<Domain Name="webtv.net" DomainSuffix="webtv.net">
@@ -172,9 +172,9 @@
 			<APIAssociationServerPK>https://api.login.live.com/pksecure/AssociationServerPK.srf</APIAssociationServerPK>
 			<APIAssociationServerWSDL>https://api.login.live.com/AssociationServerWSDL.srf</APIAssociationServerWSDL>
 			<Auth>http://login.live.com/login.srf</Auth>
-			<PPAuth>http://{{ ip }}:{{ port }}/login.live.com/login.srf</PPAuth>
-			<Auth1dot4>http://{{ ip }}:{{ port }}/login.live.com/login2.srf</Auth1dot4>
-			<PPAuthSecure>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
+			<PPAuth>http://{{ host }}/login.live.com/login.srf</PPAuth>
+			<Auth1dot4>http://{{ host }}/login.live.com/login2.srf</Auth1dot4>
+			<PPAuthSecure>http://{{ host }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
 			<AuthZServer>https://api.login.live.com/AuthorizationServer.srf</AuthZServer>
 			<AuthZServerPK>https://api.login.live.com/pksecure/AuthorizationServerPK.srf</AuthZServerPK>
 			<AuthZServerWSDL>https://api.login.live.com/AuthorizationServerWSDL.srf</AuthZServerWSDL>
@@ -190,16 +190,16 @@
 			<CookieDomain></CookieDomain>
 			<COPPAPOLICY>http://www.microsoft.com/account/default.aspx</COPPAPOLICY>
 			<COPPARelRequestResponse>https://accountservices.msn.com/ParentsIntro.srf</COPPARelRequestResponse>
-			<CustomerService>http://{{ ip }}:{{ port }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
-			<DAExpireCookie>http://{{ ip }}:{{ port }}/login.live.com/expirecookie.srf</DAExpireCookie>
-			<DigestLogin>http://{{ ip }}:{{ port }}/login.live.com/digest.srf</DigestLogin>
+			<CustomerService>http://{{ host }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
+			<DAExpireCookie>http://{{ host }}/login.live.com/expirecookie.srf</DAExpireCookie>
+			<DigestLogin>http://{{ host }}/login.live.com/digest.srf</DigestLogin>
 			<EditProfile>https://account.live.com/EditProf.aspx</EditProfile>
 			<EmailValidationUI>https://account.live.com/verifysi.aspx?lcid=1033</EmailValidationUI>
-			<HotmailSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
+			<HotmailSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
 			<KidsPassport>https://account.live.com/?lcid=1033&amp;dc=KidsPassport</KidsPassport>
 			<LogoUrl>https://auth.gfx.ms/clientlogo.bmp</LogoUrl>
-			<Logout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</Logout>
-			<PPLogout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</PPLogout>
+			<Logout>http://{{ host }}/login.live.com/logout.srf</Logout>
+			<PPLogout>http://{{ host }}/login.live.com/logout.srf</PPLogout>
 			<MPP>http://profiles.msn.com/</MPP>
 			<MPPEdit>http://profiles.msn.com/Edit.asp?lc=1033</MPPEdit>
 			<MSCDefaultValues>https://clientconfig.passport.net/GetMSCDefaultValues.srf</MSCDefaultValues>
@@ -212,10 +212,10 @@
 			<APIPassportSettingsServer>https://api.login.live.com/PPSettingsServer.srf</APIPassportSettingsServer>
 			<APIPassportSettingsServerPK>https://api.login.live.com/pksecure/PPSettingsServerPK.srf</APIPassportSettingsServerPK>
 			<APIPassportSettingsServerWSDL>https://api.login.live.com/PPSettingsServerWSDL.srf</APIPassportSettingsServerWSDL>
-			<PassportSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
-			<PasswordReset>http://{{ ip }}:{{ port }}/login.live.com/resetpw.srf</PasswordReset>
-			<PrivacyPolicy>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
-			<MsaStaticMe>http://{{ ip }}:{{ port }}/login.live.com/Me.htm</MsaStaticMe>
+			<PassportSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
+			<PasswordReset>http://{{ host }}/login.live.com/resetpw.srf</PasswordReset>
+			<PrivacyPolicy>http://{{ host }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
+			<MsaStaticMe>http://{{ host }}/login.live.com/Me.htm</MsaStaticMe>
 			<Registration>https://signup.live.com/signup?lcid=1033</Registration>
 			<MSASignup>https://signup.live.com/signup?lcid=1033</MSASignup>
 			<ServiceAPIAuthZServer>https://api.login.live.com/PPSAAuthz.srf</ServiceAPIAuthZServer>
@@ -279,19 +279,19 @@
 			<ServiceClass1RegistrationAuthorityWSDL>https://class1ra.passport.com/Cls1RAWSDL.srf</ServiceClass1RegistrationAuthorityWSDL>
 			<SignoutIconUrl>https://auth.gfx.ms/signouticon.bmp</SignoutIconUrl>
 			<XMLEditPassword>https://account.live.com/?lcid=1033&amp;dc=XMLEditPassword</XMLEditPassword>
-			<XMLLogin>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
-			<XMLLogout>http://{{ ip }}:{{ port }}/login.live.com/logoutxml.srf</XMLLogout>
-			<MobileXMLLogin>http://{{ ip }}:{{ port }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
-			<MobileXMLLogout>http://{{ ip }}:{{ port }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
-			<XMLProfileRequest>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
+			<XMLLogin>http://{{ host }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
+			<XMLLogout>http://{{ host }}/login.live.com/logoutxml.srf</XMLLogout>
+			<MobileXMLLogin>http://{{ host }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
+			<MobileXMLLogout>http://{{ host }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
+			<XMLProfileRequest>http://{{ host }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
 			<XMLRegistration>https://account.live.com/?lcid=1033&amp;dc=XMLRegistration</XMLRegistration>
 			<XMLResetPassword>https://account.live.com/?lcid=1033&amp;dc=XMLResetPassword</XMLResetPassword>
 			<XMLUpdate>https://account.live.com/?lcid=1033&amp;dc=XMLUpdate</XMLUpdate>
-			<LWAAuth>http://{{ ip }}:{{ port }}/login.live.com/wlogin.srf</LWAAuth>
+			<LWAAuth>http://{{ host }}/login.live.com/wlogin.srf</LWAAuth>
 			<MobileServerAuth>https://mid.live.com/si/default.aspx</MobileServerAuth>
 			<MobileServerLogout>https://mid.live.com/si/logout.aspx</MobileServerLogout>
 			<MobileProxy>1</MobileProxy>
-			<MobilePost>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/post.srf</MobilePost>
+			<MobilePost>http://{{ host }}/login.live.com/ppsecure/post.srf</MobilePost>
 			<MobileReg>https://account.live.com/?lcid=1033&amp;dc=MobileReg</MobileReg>
 		</Domain>
 		<Domain Name="passport.com" DomainSuffix="passport.com">
@@ -319,9 +319,9 @@
 			<APIAssociationServerPK>https://api.login.live.com/pksecure/AssociationServerPK.srf</APIAssociationServerPK>
 			<APIAssociationServerWSDL>https://api.login.live.com/AssociationServerWSDL.srf</APIAssociationServerWSDL>
 			<Auth>http://login.live.com/login.srf</Auth>
-			<PPAuth>http://{{ ip }}:{{ port }}/login.live.com/login.srf</PPAuth>
-			<Auth1dot4>http://{{ ip }}:{{ port }}/login.live.com/login2.srf</Auth1dot4>
-			<PPAuthSecure>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
+			<PPAuth>http://{{ host }}/login.live.com/login.srf</PPAuth>
+			<Auth1dot4>http://{{ host }}/login.live.com/login2.srf</Auth1dot4>
+			<PPAuthSecure>http://{{ host }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
 			<AuthZServer>https://api.login.live.com/AuthorizationServer.srf</AuthZServer>
 			<AuthZServerPK>https://api.login.live.com/pksecure/AuthorizationServerPK.srf</AuthZServerPK>
 			<AuthZServerWSDL>https://api.login.live.com/AuthorizationServerWSDL.srf</AuthZServerWSDL>
@@ -337,16 +337,16 @@
 			<CookieDomain></CookieDomain>
 			<COPPAPOLICY>http://www.microsoft.com/account/default.aspx</COPPAPOLICY>
 			<COPPARelRequestResponse>https://accountservices.msn.com/ParentsIntro.srf</COPPARelRequestResponse>
-			<CustomerService>http://{{ ip }}:{{ port }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
-			<DAExpireCookie>http://{{ ip }}:{{ port }}/login.live.com/expirecookie.srf</DAExpireCookie>
-			<DigestLogin>http://{{ ip }}:{{ port }}/login.live.com/digest.srf</DigestLogin>
+			<CustomerService>http://{{ host }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
+			<DAExpireCookie>http://{{ host }}/login.live.com/expirecookie.srf</DAExpireCookie>
+			<DigestLogin>http://{{ host }}/login.live.com/digest.srf</DigestLogin>
 			<EditProfile>https://account.live.com/EditProf.aspx</EditProfile>
 			<EmailValidationUI>https://account.live.com/verifysi.aspx?lcid=1033</EmailValidationUI>
-			<HotmailSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
+			<HotmailSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
 			<KidsPassport>https://account.live.com/?lcid=1033&amp;dc=KidsPassport</KidsPassport>
 			<LogoUrl>https://auth.gfx.ms/clientlogo.bmp</LogoUrl>
-			<Logout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</Logout>
-			<PPLogout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</PPLogout>
+			<Logout>http://{{ host }}/login.live.com/logout.srf</Logout>
+			<PPLogout>http://{{ host }}/login.live.com/logout.srf</PPLogout>
 			<MPP>http://profiles.msn.com/</MPP>
 			<MPPEdit>http://profiles.msn.com/Edit.asp?lc=1033</MPPEdit>
 			<MSCDefaultValues>https://clientconfig.passport.net/GetMSCDefaultValues.srf</MSCDefaultValues>
@@ -359,10 +359,10 @@
 			<APIPassportSettingsServer>https://api.login.live.com/PPSettingsServer.srf</APIPassportSettingsServer>
 			<APIPassportSettingsServerPK>https://api.login.live.com/pksecure/PPSettingsServerPK.srf</APIPassportSettingsServerPK>
 			<APIPassportSettingsServerWSDL>https://api.login.live.com/PPSettingsServerWSDL.srf</APIPassportSettingsServerWSDL>
-			<PassportSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
-			<PasswordReset>http://{{ ip }}:{{ port }}/login.live.com/resetpw.srf</PasswordReset>
-			<PrivacyPolicy>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
-			<MsaStaticMe>http://{{ ip }}:{{ port }}/login.live.com/Me.htm</MsaStaticMe>
+			<PassportSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
+			<PasswordReset>http://{{ host }}/login.live.com/resetpw.srf</PasswordReset>
+			<PrivacyPolicy>http://{{ host }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
+			<MsaStaticMe>http://{{ host }}/login.live.com/Me.htm</MsaStaticMe>
 			<Registration>https://signup.live.com/signup?lcid=1033</Registration>
 			<MSASignup>https://signup.live.com/signup?lcid=1033</MSASignup>
 			<ServiceAPIAuthZServer>https://api.login.live.com/PPSAAuthz.srf</ServiceAPIAuthZServer>
@@ -426,19 +426,19 @@
 			<ServiceClass1RegistrationAuthorityWSDL>https://class1ra.passport.com/Cls1RAWSDL.srf</ServiceClass1RegistrationAuthorityWSDL>
 			<SignoutIconUrl>https://auth.gfx.ms/signouticon.bmp</SignoutIconUrl>
 			<XMLEditPassword>https://account.live.com/?lcid=1033&amp;dc=XMLEditPassword</XMLEditPassword>
-			<XMLLogin>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
-			<XMLLogout>http://{{ ip }}:{{ port }}/login.live.com/logoutxml.srf</XMLLogout>
-			<MobileXMLLogin>http://{{ ip }}:{{ port }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
-			<MobileXMLLogout>http://{{ ip }}:{{ port }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
-			<XMLProfileRequest>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
+			<XMLLogin>http://{{ host }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
+			<XMLLogout>http://{{ host }}/login.live.com/logoutxml.srf</XMLLogout>
+			<MobileXMLLogin>http://{{ host }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
+			<MobileXMLLogout>http://{{ host }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
+			<XMLProfileRequest>http://{{ host }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
 			<XMLRegistration>https://account.live.com/?lcid=1033&amp;dc=XMLRegistration</XMLRegistration>
 			<XMLResetPassword>https://account.live.com/?lcid=1033&amp;dc=XMLResetPassword</XMLResetPassword>
 			<XMLUpdate>https://account.live.com/?lcid=1033&amp;dc=XMLUpdate</XMLUpdate>
-			<LWAAuth>http://{{ ip }}:{{ port }}/login.live.com/wlogin.srf</LWAAuth>
+			<LWAAuth>http://{{ host }}/login.live.com/wlogin.srf</LWAAuth>
 			<MobileServerAuth>https://mid.live.com/si/default.aspx</MobileServerAuth>
 			<MobileServerLogout>https://mid.live.com/si/logout.aspx</MobileServerLogout>
 			<MobileProxy>1</MobileProxy>
-			<MobilePost>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/post.srf</MobilePost>
+			<MobilePost>http://{{ host }}/login.live.com/ppsecure/post.srf</MobilePost>
 			<MobileReg>https://account.live.com/?lcid=1033&amp;dc=MobileReg</MobileReg>
 		</Domain>
 		<Domain Name="messengeruser.com" DomainSuffix="messengeruser.com">
@@ -466,9 +466,9 @@
 			<APIAssociationServerPK>https://api.login.live.com/pksecure/AssociationServerPK.srf</APIAssociationServerPK>
 			<APIAssociationServerWSDL>https://api.login.live.com/AssociationServerWSDL.srf</APIAssociationServerWSDL>
 			<Auth>http://login.live.com/login.srf</Auth>
-			<PPAuth>http://{{ ip }}:{{ port }}/login.live.com/login.srf</PPAuth>
-			<Auth1dot4>http://{{ ip }}:{{ port }}/login.live.com/login2.srf</Auth1dot4>
-			<PPAuthSecure>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
+			<PPAuth>http://{{ host }}/login.live.com/login.srf</PPAuth>
+			<Auth1dot4>http://{{ host }}/login.live.com/login2.srf</Auth1dot4>
+			<PPAuthSecure>http://{{ host }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
 			<AuthZServer>https://api.login.live.com/AuthorizationServer.srf</AuthZServer>
 			<AuthZServerPK>https://api.login.live.com/pksecure/AuthorizationServerPK.srf</AuthZServerPK>
 			<AuthZServerWSDL>https://api.login.live.com/AuthorizationServerWSDL.srf</AuthZServerWSDL>
@@ -484,16 +484,16 @@
 			<CookieDomain></CookieDomain>
 			<COPPAPOLICY>http://www.microsoft.com/account/default.aspx</COPPAPOLICY>
 			<COPPARelRequestResponse>https://accountservices.msn.com/ParentsIntro.srf</COPPARelRequestResponse>
-			<CustomerService>http://{{ ip }}:{{ port }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
-			<DAExpireCookie>http://{{ ip }}:{{ port }}/login.live.com/expirecookie.srf</DAExpireCookie>
-			<DigestLogin>http://{{ ip }}:{{ port }}/login.live.com/digest.srf</DigestLogin>
+			<CustomerService>http://{{ host }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
+			<DAExpireCookie>http://{{ host }}/login.live.com/expirecookie.srf</DAExpireCookie>
+			<DigestLogin>http://{{ host }}/login.live.com/digest.srf</DigestLogin>
 			<EditProfile>https://account.live.com/EditProf.aspx</EditProfile>
 			<EmailValidationUI>https://account.live.com/verifysi.aspx?lcid=1033</EmailValidationUI>
-			<HotmailSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
+			<HotmailSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
 			<KidsPassport>https://account.live.com/?lcid=1033&amp;dc=KidsPassport</KidsPassport>
 			<LogoUrl>https://auth.gfx.ms/clientlogo.bmp</LogoUrl>
-			<Logout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</Logout>
-			<PPLogout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</PPLogout>
+			<Logout>http://{{ host }}/login.live.com/logout.srf</Logout>
+			<PPLogout>http://{{ host }}/login.live.com/logout.srf</PPLogout>
 			<MPP>http://profiles.msn.com/</MPP>
 			<MPPEdit>http://profiles.msn.com/Edit.asp?lc=1033</MPPEdit>
 			<MSCDefaultValues>https://clientconfig.passport.net/GetMSCDefaultValues.srf</MSCDefaultValues>
@@ -506,10 +506,10 @@
 			<APIPassportSettingsServer>https://api.login.live.com/PPSettingsServer.srf</APIPassportSettingsServer>
 			<APIPassportSettingsServerPK>https://api.login.live.com/pksecure/PPSettingsServerPK.srf</APIPassportSettingsServerPK>
 			<APIPassportSettingsServerWSDL>https://api.login.live.com/PPSettingsServerWSDL.srf</APIPassportSettingsServerWSDL>
-			<PassportSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
-			<PasswordReset>http://{{ ip }}:{{ port }}/login.live.com/resetpw.srf</PasswordReset>
-			<PrivacyPolicy>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
-			<MsaStaticMe>http://{{ ip }}:{{ port }}/login.live.com/Me.htm</MsaStaticMe>
+			<PassportSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
+			<PasswordReset>http://{{ host }}/login.live.com/resetpw.srf</PasswordReset>
+			<PrivacyPolicy>http://{{ host }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
+			<MsaStaticMe>http://{{ host }}/login.live.com/Me.htm</MsaStaticMe>
 			<Registration>https://signup.live.com/signup?lcid=1033</Registration>
 			<MSASignup>https://signup.live.com/signup?lcid=1033</MSASignup>
 			<ServiceAPIAuthZServer>https://api.login.live.com/PPSAAuthz.srf</ServiceAPIAuthZServer>
@@ -573,19 +573,19 @@
 			<ServiceClass1RegistrationAuthorityWSDL>https://class1ra.passport.com/Cls1RAWSDL.srf</ServiceClass1RegistrationAuthorityWSDL>
 			<SignoutIconUrl>https://auth.gfx.ms/signouticon.bmp</SignoutIconUrl>
 			<XMLEditPassword>https://account.live.com/?lcid=1033&amp;dc=XMLEditPassword</XMLEditPassword>
-			<XMLLogin>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
-			<XMLLogout>http://{{ ip }}:{{ port }}/login.live.com/logoutxml.srf</XMLLogout>
-			<MobileXMLLogin>http://{{ ip }}:{{ port }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
-			<MobileXMLLogout>http://{{ ip }}:{{ port }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
-			<XMLProfileRequest>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
+			<XMLLogin>http://{{ host }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
+			<XMLLogout>http://{{ host }}/login.live.com/logoutxml.srf</XMLLogout>
+			<MobileXMLLogin>http://{{ host }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
+			<MobileXMLLogout>http://{{ host }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
+			<XMLProfileRequest>http://{{ host }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
 			<XMLRegistration>https://account.live.com/?lcid=1033&amp;dc=XMLRegistration</XMLRegistration>
 			<XMLResetPassword>https://account.live.com/?lcid=1033&amp;dc=XMLResetPassword</XMLResetPassword>
 			<XMLUpdate>https://account.live.com/?lcid=1033&amp;dc=XMLUpdate</XMLUpdate>
-			<LWAAuth>http://{{ ip }}:{{ port }}/login.live.com/wlogin.srf</LWAAuth>
+			<LWAAuth>http://{{ host }}/login.live.com/wlogin.srf</LWAAuth>
 			<MobileServerAuth>https://mid.live.com/si/default.aspx</MobileServerAuth>
 			<MobileServerLogout>https://mid.live.com/si/logout.aspx</MobileServerLogout>
 			<MobileProxy>1</MobileProxy>
-			<MobilePost>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/post.srf</MobilePost>
+			<MobilePost>http://{{ host }}/login.live.com/ppsecure/post.srf</MobilePost>
 			<MobileReg>https://account.live.com/?lcid=1033&amp;dc=MobileReg</MobileReg>
 		</Domain>
 		<Domain Name="msn.com" DomainSuffix="msn.com">
@@ -613,9 +613,9 @@
 			<APIAssociationServerPK>https://api.login.live.com/pksecure/AssociationServerPK.srf</APIAssociationServerPK>
 			<APIAssociationServerWSDL>https://api.login.live.com/AssociationServerWSDL.srf</APIAssociationServerWSDL>
 			<Auth>http://login.live.com/login.srf</Auth>
-			<PPAuth>http://{{ ip }}:{{ port }}/login.live.com/login.srf</PPAuth>
-			<Auth1dot4>http://{{ ip }}:{{ port }}/login.live.com/login2.srf</Auth1dot4>
-			<PPAuthSecure>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
+			<PPAuth>http://{{ host }}/login.live.com/login.srf</PPAuth>
+			<Auth1dot4>http://{{ host }}/login.live.com/login2.srf</Auth1dot4>
+			<PPAuthSecure>http://{{ host }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
 			<AuthZServer>https://api.login.live.com/AuthorizationServer.srf</AuthZServer>
 			<AuthZServerPK>https://api.login.live.com/pksecure/AuthorizationServerPK.srf</AuthZServerPK>
 			<AuthZServerWSDL>https://api.login.live.com/AuthorizationServerWSDL.srf</AuthZServerWSDL>
@@ -631,16 +631,16 @@
 			<CookieDomain></CookieDomain>
 			<COPPAPOLICY>http://www.microsoft.com/account/default.aspx</COPPAPOLICY>
 			<COPPARelRequestResponse>https://accountservices.msn.com/ParentsIntro.srf</COPPARelRequestResponse>
-			<CustomerService>http://{{ ip }}:{{ port }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
-			<DAExpireCookie>http://{{ ip }}:{{ port }}/login.live.com/expirecookie.srf</DAExpireCookie>
-			<DigestLogin>http://{{ ip }}:{{ port }}/login.live.com/digest.srf</DigestLogin>
+			<CustomerService>http://{{ host }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
+			<DAExpireCookie>http://{{ host }}/login.live.com/expirecookie.srf</DAExpireCookie>
+			<DigestLogin>http://{{ host }}/login.live.com/digest.srf</DigestLogin>
 			<EditProfile>https://account.live.com/EditProf.aspx</EditProfile>
 			<EmailValidationUI>https://account.live.com/verifysi.aspx?lcid=1033</EmailValidationUI>
-			<HotmailSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
+			<HotmailSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
 			<KidsPassport>https://account.live.com/?lcid=1033&amp;dc=KidsPassport</KidsPassport>
 			<LogoUrl>https://auth.gfx.ms/clientlogo.bmp</LogoUrl>
-			<Logout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</Logout>
-			<PPLogout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</PPLogout>
+			<Logout>http://{{ host }}/login.live.com/logout.srf</Logout>
+			<PPLogout>http://{{ host }}/login.live.com/logout.srf</PPLogout>
 			<MPP>http://profiles.msn.com/</MPP>
 			<MPPEdit>http://profiles.msn.com/Edit.asp?lc=1033</MPPEdit>
 			<MSCDefaultValues>https://clientconfig.passport.net/GetMSCDefaultValues.srf</MSCDefaultValues>
@@ -653,10 +653,10 @@
 			<APIPassportSettingsServer>https://api.login.live.com/PPSettingsServer.srf</APIPassportSettingsServer>
 			<APIPassportSettingsServerPK>https://api.login.live.com/pksecure/PPSettingsServerPK.srf</APIPassportSettingsServerPK>
 			<APIPassportSettingsServerWSDL>https://api.login.live.com/PPSettingsServerWSDL.srf</APIPassportSettingsServerWSDL>
-			<PassportSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
-			<PasswordReset>http://{{ ip }}:{{ port }}/login.live.com/resetpw.srf</PasswordReset>
-			<PrivacyPolicy>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
-			<MsaStaticMe>http://{{ ip }}:{{ port }}/login.live.com/Me.htm</MsaStaticMe>
+			<PassportSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
+			<PasswordReset>http://{{ host }}/login.live.com/resetpw.srf</PasswordReset>
+			<PrivacyPolicy>http://{{ host }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
+			<MsaStaticMe>http://{{ host }}/login.live.com/Me.htm</MsaStaticMe>
 			<Registration>https://signup.live.com/signup?lcid=1033</Registration>
 			<MSASignup>https://signup.live.com/signup?lcid=1033</MSASignup>
 			<ServiceAPIAuthZServer>https://api.login.live.com/PPSAAuthz.srf</ServiceAPIAuthZServer>
@@ -720,19 +720,19 @@
 			<ServiceClass1RegistrationAuthorityWSDL>https://class1ra.passport.com/Cls1RAWSDL.srf</ServiceClass1RegistrationAuthorityWSDL>
 			<SignoutIconUrl>https://auth.gfx.ms/signouticon.bmp</SignoutIconUrl>
 			<XMLEditPassword>https://account.live.com/?lcid=1033&amp;dc=XMLEditPassword</XMLEditPassword>
-			<XMLLogin>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
-			<XMLLogout>http://{{ ip }}:{{ port }}/login.live.com/logoutxml.srf</XMLLogout>
-			<MobileXMLLogin>http://{{ ip }}:{{ port }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
-			<MobileXMLLogout>http://{{ ip }}:{{ port }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
-			<XMLProfileRequest>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
+			<XMLLogin>http://{{ host }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
+			<XMLLogout>http://{{ host }}/login.live.com/logoutxml.srf</XMLLogout>
+			<MobileXMLLogin>http://{{ host }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
+			<MobileXMLLogout>http://{{ host }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
+			<XMLProfileRequest>http://{{ host }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
 			<XMLRegistration>https://account.live.com/?lcid=1033&amp;dc=XMLRegistration</XMLRegistration>
 			<XMLResetPassword>https://account.live.com/?lcid=1033&amp;dc=XMLResetPassword</XMLResetPassword>
 			<XMLUpdate>https://account.live.com/?lcid=1033&amp;dc=XMLUpdate</XMLUpdate>
-			<LWAAuth>http://{{ ip }}:{{ port }}/login.live.com/wlogin.srf</LWAAuth>
+			<LWAAuth>http://{{ host }}/login.live.com/wlogin.srf</LWAAuth>
 			<MobileServerAuth>https://mid.live.com/si/default.aspx</MobileServerAuth>
 			<MobileServerLogout>https://mid.live.com/si/logout.aspx</MobileServerLogout>
 			<MobileProxy>1</MobileProxy>
-			<MobilePost>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/post.srf</MobilePost>
+			<MobilePost>http://{{ host }}/login.live.com/ppsecure/post.srf</MobilePost>
 			<MobileReg>https://account.live.com/?lcid=1033&amp;dc=MobileReg</MobileReg>
 		</Domain>
 		<Domain Name="compaq.net" DomainSuffix="compaq.net">
@@ -760,9 +760,9 @@
 			<APIAssociationServerPK>https://api.login.live.com/pksecure/AssociationServerPK.srf</APIAssociationServerPK>
 			<APIAssociationServerWSDL>https://api.login.live.com/AssociationServerWSDL.srf</APIAssociationServerWSDL>
 			<Auth>http://login.live.com/login.srf</Auth>
-			<PPAuth>http://{{ ip }}:{{ port }}/login.live.com/login.srf</PPAuth>
-			<Auth1dot4>http://{{ ip }}:{{ port }}/login.live.com/login2.srf</Auth1dot4>
-			<PPAuthSecure>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
+			<PPAuth>http://{{ host }}/login.live.com/login.srf</PPAuth>
+			<Auth1dot4>http://{{ host }}/login.live.com/login2.srf</Auth1dot4>
+			<PPAuthSecure>http://{{ host }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
 			<AuthZServer>https://api.login.live.com/AuthorizationServer.srf</AuthZServer>
 			<AuthZServerPK>https://api.login.live.com/pksecure/AuthorizationServerPK.srf</AuthZServerPK>
 			<AuthZServerWSDL>https://api.login.live.com/AuthorizationServerWSDL.srf</AuthZServerWSDL>
@@ -778,16 +778,16 @@
 			<CookieDomain></CookieDomain>
 			<COPPAPOLICY>http://www.microsoft.com/account/default.aspx</COPPAPOLICY>
 			<COPPARelRequestResponse>https://accountservices.msn.com/ParentsIntro.srf</COPPARelRequestResponse>
-			<CustomerService>http://{{ ip }}:{{ port }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
-			<DAExpireCookie>http://{{ ip }}:{{ port }}/login.live.com/expirecookie.srf</DAExpireCookie>
-			<DigestLogin>http://{{ ip }}:{{ port }}/login.live.com/digest.srf</DigestLogin>
+			<CustomerService>http://{{ host }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
+			<DAExpireCookie>http://{{ host }}/login.live.com/expirecookie.srf</DAExpireCookie>
+			<DigestLogin>http://{{ host }}/login.live.com/digest.srf</DigestLogin>
 			<EditProfile>https://account.live.com/EditProf.aspx</EditProfile>
-			<EmailValidationUI>http://{{ ip }}:{{ port }}/login.live.com/emailval.srf</EmailValidationUI>
-			<HotmailSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
+			<EmailValidationUI>http://{{ host }}/login.live.com/emailval.srf</EmailValidationUI>
+			<HotmailSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
 			<KidsPassport>https://account.live.com/?lcid=1033&amp;dc=KidsPassport</KidsPassport>
 			<LogoUrl>https://auth.gfx.ms/clientlogo.bmp</LogoUrl>
-			<Logout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</Logout>
-			<PPLogout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</PPLogout>
+			<Logout>http://{{ host }}/login.live.com/logout.srf</Logout>
+			<PPLogout>http://{{ host }}/login.live.com/logout.srf</PPLogout>
 			<MPP>http://profiles.msn.com/</MPP>
 			<MPPEdit>http://profiles.msn.com/Edit.asp?lc=1033</MPPEdit>
 			<MSCDefaultValues>https://clientconfig.passport.net/GetMSCDefaultValues.srf</MSCDefaultValues>
@@ -800,10 +800,10 @@
 			<APIPassportSettingsServer>https://api.login.live.com/PPSettingsServer.srf</APIPassportSettingsServer>
 			<APIPassportSettingsServerPK>https://api.login.live.com/pksecure/PPSettingsServerPK.srf</APIPassportSettingsServerPK>
 			<APIPassportSettingsServerWSDL>https://api.login.live.com/PPSettingsServerWSDL.srf</APIPassportSettingsServerWSDL>
-			<PassportSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
-			<PasswordReset>http://{{ ip }}:{{ port }}/login.live.com/resetpw.srf</PasswordReset>
-			<PrivacyPolicy>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
-			<MsaStaticMe>http://{{ ip }}:{{ port }}/login.live.com/Me.htm</MsaStaticMe>
+			<PassportSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
+			<PasswordReset>http://{{ host }}/login.live.com/resetpw.srf</PasswordReset>
+			<PrivacyPolicy>http://{{ host }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
+			<MsaStaticMe>http://{{ host }}/login.live.com/Me.htm</MsaStaticMe>
 			<Registration>https://signup.live.com/signup?lcid=1033</Registration>
 			<MSASignup>https://signup.live.com/signup?lcid=1033</MSASignup>
 			<ServiceAPIAuthZServer>https://api.login.live.com/PPSAAuthz.srf</ServiceAPIAuthZServer>
@@ -867,19 +867,19 @@
 			<ServiceClass1RegistrationAuthorityWSDL>https://class1ra.passport.com/Cls1RAWSDL.srf</ServiceClass1RegistrationAuthorityWSDL>
 			<SignoutIconUrl>https://auth.gfx.ms/signouticon.bmp</SignoutIconUrl>
 			<XMLEditPassword>https://account.live.com/?lcid=1033&amp;dc=XMLEditPassword</XMLEditPassword>
-			<XMLLogin>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
-			<XMLLogout>http://{{ ip }}:{{ port }}/login.live.com/logoutxml.srf</XMLLogout>
-			<MobileXMLLogin>http://{{ ip }}:{{ port }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
-			<MobileXMLLogout>http://{{ ip }}:{{ port }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
-			<XMLProfileRequest>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
+			<XMLLogin>http://{{ host }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
+			<XMLLogout>http://{{ host }}/login.live.com/logoutxml.srf</XMLLogout>
+			<MobileXMLLogin>http://{{ host }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
+			<MobileXMLLogout>http://{{ host }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
+			<XMLProfileRequest>http://{{ host }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
 			<XMLRegistration>https://account.live.com/?lcid=1033&amp;dc=XMLRegistration</XMLRegistration>
 			<XMLResetPassword>https://account.live.com/?lcid=1033&amp;dc=XMLResetPassword</XMLResetPassword>
 			<XMLUpdate>https://account.live.com/?lcid=1033&amp;dc=XMLUpdate</XMLUpdate>
-			<LWAAuth>http://{{ ip }}:{{ port }}/login.live.com/wlogin.srf</LWAAuth>
+			<LWAAuth>http://{{ host }}/login.live.com/wlogin.srf</LWAAuth>
 			<MobileServerAuth>https://mid.live.com/si/default.aspx</MobileServerAuth>
 			<MobileServerLogout>https://mid.live.com/si/logout.aspx</MobileServerLogout>
 			<MobileProxy>1</MobileProxy>
-			<MobilePost>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/post.srf</MobilePost>
+			<MobilePost>http://{{ host }}/login.live.com/ppsecure/post.srf</MobilePost>
 			<MobileReg>https://account.live.com/?lcid=1033&amp;dc=MobileReg</MobileReg>
 		</Domain>
 		<Domain Name="hotmail.com" DomainSuffix="hotmail.com">
@@ -907,9 +907,9 @@
 			<APIAssociationServerPK>https://api.login.live.com/pksecure/AssociationServerPK.srf</APIAssociationServerPK>
 			<APIAssociationServerWSDL>https://api.login.live.com/AssociationServerWSDL.srf</APIAssociationServerWSDL>
 			<Auth>http://login.live.com/login.srf</Auth>
-			<PPAuth>http://{{ ip }}:{{ port }}/login.live.com/login.srf</PPAuth>
-			<Auth1dot4>http://{{ ip }}:{{ port }}/login.live.com/login2.srf</Auth1dot4>
-			<PPAuthSecure>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
+			<PPAuth>http://{{ host }}/login.live.com/login.srf</PPAuth>
+			<Auth1dot4>http://{{ host }}/login.live.com/login2.srf</Auth1dot4>
+			<PPAuthSecure>http://{{ host }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
 			<AuthZServer>https://api.login.live.com/AuthorizationServer.srf</AuthZServer>
 			<AuthZServerPK>https://api.login.live.com/pksecure/AuthorizationServerPK.srf</AuthZServerPK>
 			<AuthZServerWSDL>https://api.login.live.com/AuthorizationServerWSDL.srf</AuthZServerWSDL>
@@ -925,16 +925,16 @@
 			<CookieDomain></CookieDomain>
 			<COPPAPOLICY>http://www.microsoft.com/account/default.aspx</COPPAPOLICY>
 			<COPPARelRequestResponse>https://accountservices.msn.com/ParentsIntro.srf</COPPARelRequestResponse>
-			<CustomerService>http://{{ ip }}:{{ port }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
-			<DAExpireCookie>http://{{ ip }}:{{ port }}/login.live.com/expirecookie.srf</DAExpireCookie>
-			<DigestLogin>http://{{ ip }}:{{ port }}/login.live.com/digest.srf</DigestLogin>
+			<CustomerService>http://{{ host }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
+			<DAExpireCookie>http://{{ host }}/login.live.com/expirecookie.srf</DAExpireCookie>
+			<DigestLogin>http://{{ host }}/login.live.com/digest.srf</DigestLogin>
 			<EditProfile>https://account.live.com/EditProf.aspx</EditProfile>
 			<EmailValidationUI>https://account.live.com/verifysi.aspx?lcid=1033</EmailValidationUI>
-			<HotmailSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
+			<HotmailSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
 			<KidsPassport>https://account.live.com/?lcid=1033&amp;dc=KidsPassport</KidsPassport>
 			<LogoUrl>https://auth.gfx.ms/clientlogo.bmp</LogoUrl>
-			<Logout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</Logout>
-			<PPLogout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</PPLogout>
+			<Logout>http://{{ host }}/login.live.com/logout.srf</Logout>
+			<PPLogout>http://{{ host }}/login.live.com/logout.srf</PPLogout>
 			<MPP>http://profiles.msn.com/</MPP>
 			<MPPEdit>http://profiles.msn.com/Edit.asp?lc=1033</MPPEdit>
 			<MSCDefaultValues>https://clientconfig.passport.net/GetMSCDefaultValues.srf</MSCDefaultValues>
@@ -947,10 +947,10 @@
 			<APIPassportSettingsServer>https://api.login.live.com/PPSettingsServer.srf</APIPassportSettingsServer>
 			<APIPassportSettingsServerPK>https://api.login.live.com/pksecure/PPSettingsServerPK.srf</APIPassportSettingsServerPK>
 			<APIPassportSettingsServerWSDL>https://api.login.live.com/PPSettingsServerWSDL.srf</APIPassportSettingsServerWSDL>
-			<PassportSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
-			<PasswordReset>http://{{ ip }}:{{ port }}/login.live.com/resetpw.srf?src=hotmail.com&amp;lc=1033</PasswordReset>
-			<PrivacyPolicy>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
-			<MsaStaticMe>http://{{ ip }}:{{ port }}/login.live.com/Me.htm</MsaStaticMe>
+			<PassportSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
+			<PasswordReset>http://{{ host }}/login.live.com/resetpw.srf?src=hotmail.com&amp;lc=1033</PasswordReset>
+			<PrivacyPolicy>http://{{ host }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
+			<MsaStaticMe>http://{{ host }}/login.live.com/Me.htm</MsaStaticMe>
 			<Registration>https://signup.live.com/signup?lcid=1033</Registration>
 			<MSASignup>https://signup.live.com/signup?lcid=1033</MSASignup>
 			<ServiceAPIAuthZServer>https://api.login.live.com/PPSAAuthz.srf</ServiceAPIAuthZServer>
@@ -1014,19 +1014,19 @@
 			<ServiceClass1RegistrationAuthorityWSDL>https://class1ra.passport.com/Cls1RAWSDL.srf</ServiceClass1RegistrationAuthorityWSDL>
 			<SignoutIconUrl>https://auth.gfx.ms/signouticon.bmp</SignoutIconUrl>
 			<XMLEditPassword>https://account.live.com/?lcid=1033&amp;dc=XMLEditPassword</XMLEditPassword>
-			<XMLLogin>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
-			<XMLLogout>http://{{ ip }}:{{ port }}/login.live.com/logoutxml.srf</XMLLogout>
-			<MobileXMLLogin>http://{{ ip }}:{{ port }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
-			<MobileXMLLogout>http://{{ ip }}:{{ port }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
-			<XMLProfileRequest>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
+			<XMLLogin>http://{{ host }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
+			<XMLLogout>http://{{ host }}/login.live.com/logoutxml.srf</XMLLogout>
+			<MobileXMLLogin>http://{{ host }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
+			<MobileXMLLogout>http://{{ host }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
+			<XMLProfileRequest>http://{{ host }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
 			<XMLRegistration>https://account.live.com/?lcid=1033&amp;dc=XMLRegistration</XMLRegistration>
 			<XMLResetPassword>https://account.live.com/?lcid=1033&amp;dc=XMLResetPassword</XMLResetPassword>
 			<XMLUpdate>https://account.live.com/?lcid=1033&amp;dc=XMLUpdate</XMLUpdate>
-			<LWAAuth>http://{{ ip }}:{{ port }}/login.live.com/wlogin.srf</LWAAuth>
+			<LWAAuth>http://{{ host }}/login.live.com/wlogin.srf</LWAAuth>
 			<MobileServerAuth>https://mid.live.com/si/default.aspx</MobileServerAuth>
 			<MobileServerLogout>https://mid.live.com/si/logout.aspx</MobileServerLogout>
 			<MobileProxy>1</MobileProxy>
-			<MobilePost>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/post.srf</MobilePost>
+			<MobilePost>http://{{ host }}/login.live.com/ppsecure/post.srf</MobilePost>
 			<MobileReg>https://account.live.com/?lcid=1033&amp;dc=MobileReg</MobileReg>
 		</Domain>
 		<Domain Name="hotmail.co.jp" DomainSuffix="hotmail.co.jp">
@@ -1054,9 +1054,9 @@
 			<APIAssociationServerPK>https://api.login.live.com/pksecure/AssociationServerPK.srf</APIAssociationServerPK>
 			<APIAssociationServerWSDL>https://api.login.live.com/AssociationServerWSDL.srf</APIAssociationServerWSDL>
 			<Auth>http://login.live.com/login.srf</Auth>
-			<PPAuth>http://{{ ip }}:{{ port }}/login.live.com/login.srf</PPAuth>
-			<Auth1dot4>http://{{ ip }}:{{ port }}/login.live.com/login2.srf</Auth1dot4>
-			<PPAuthSecure>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
+			<PPAuth>http://{{ host }}/login.live.com/login.srf</PPAuth>
+			<Auth1dot4>http://{{ host }}/login.live.com/login2.srf</Auth1dot4>
+			<PPAuthSecure>http://{{ host }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
 			<AuthZServer>https://api.login.live.com/AuthorizationServer.srf</AuthZServer>
 			<AuthZServerPK>https://api.login.live.com/pksecure/AuthorizationServerPK.srf</AuthZServerPK>
 			<AuthZServerWSDL>https://api.login.live.com/AuthorizationServerWSDL.srf</AuthZServerWSDL>
@@ -1072,16 +1072,16 @@
 			<CookieDomain></CookieDomain>
 			<COPPAPOLICY>http://www.microsoft.com/account/default.aspx</COPPAPOLICY>
 			<COPPARelRequestResponse>https://accountservices.msn.com/ParentsIntro.srf</COPPARelRequestResponse>
-			<CustomerService>http://{{ ip }}:{{ port }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
-			<DAExpireCookie>http://{{ ip }}:{{ port }}/login.live.com/expirecookie.srf</DAExpireCookie>
-			<DigestLogin>http://{{ ip }}:{{ port }}/login.live.com/digest.srf</DigestLogin>
+			<CustomerService>http://{{ host }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
+			<DAExpireCookie>http://{{ host }}/login.live.com/expirecookie.srf</DAExpireCookie>
+			<DigestLogin>http://{{ host }}/login.live.com/digest.srf</DigestLogin>
 			<EditProfile>https://account.live.com/EditProf.aspx</EditProfile>
 			<EmailValidationUI>https://account.live.com/verifysi.aspx?lcid=1033</EmailValidationUI>
-			<HotmailSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
+			<HotmailSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
 			<KidsPassport>https://account.live.com/?lcid=1033&amp;dc=KidsPassport</KidsPassport>
 			<LogoUrl>https://auth.gfx.ms/clientlogo.bmp</LogoUrl>
-			<Logout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</Logout>
-			<PPLogout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</PPLogout>
+			<Logout>http://{{ host }}/login.live.com/logout.srf</Logout>
+			<PPLogout>http://{{ host }}/login.live.com/logout.srf</PPLogout>
 			<MPP>http://profiles.msn.com/</MPP>
 			<MPPEdit>http://profiles.msn.com/Edit.asp?lc=1033</MPPEdit>
 			<MSCDefaultValues>https://clientconfig.passport.net/GetMSCDefaultValues.srf</MSCDefaultValues>
@@ -1094,10 +1094,10 @@
 			<APIPassportSettingsServer>https://api.login.live.com/PPSettingsServer.srf</APIPassportSettingsServer>
 			<APIPassportSettingsServerPK>https://api.login.live.com/pksecure/PPSettingsServerPK.srf</APIPassportSettingsServerPK>
 			<APIPassportSettingsServerWSDL>https://api.login.live.com/PPSettingsServerWSDL.srf</APIPassportSettingsServerWSDL>
-			<PassportSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
-			<PasswordReset>http://{{ ip }}:{{ port }}/login.live.com/resetpw.srf?src=hotmail.com&amp;lc=1033</PasswordReset>
-			<PrivacyPolicy>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
-			<MsaStaticMe>http://{{ ip }}:{{ port }}/login.live.com/Me.htm</MsaStaticMe>
+			<PassportSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
+			<PasswordReset>http://{{ host }}/login.live.com/resetpw.srf?src=hotmail.com&amp;lc=1033</PasswordReset>
+			<PrivacyPolicy>http://{{ host }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
+			<MsaStaticMe>http://{{ host }}/login.live.com/Me.htm</MsaStaticMe>
 			<Registration>https://signup.live.com/signup?lcid=1033</Registration>
 			<MSASignup>https://signup.live.com/signup?lcid=1033</MSASignup>
 			<ServiceAPIAuthZServer>https://api.login.live.com/PPSAAuthz.srf</ServiceAPIAuthZServer>
@@ -1161,19 +1161,19 @@
 			<ServiceClass1RegistrationAuthorityWSDL>https://class1ra.passport.com/Cls1RAWSDL.srf</ServiceClass1RegistrationAuthorityWSDL>
 			<SignoutIconUrl>https://auth.gfx.ms/signouticon.bmp</SignoutIconUrl>
 			<XMLEditPassword>https://account.live.com/?lcid=1033&amp;dc=XMLEditPassword</XMLEditPassword>
-			<XMLLogin>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
-			<XMLLogout>http://{{ ip }}:{{ port }}/login.live.com/logoutxml.srf</XMLLogout>
-			<MobileXMLLogin>http://{{ ip }}:{{ port }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
-			<MobileXMLLogout>http://{{ ip }}:{{ port }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
-			<XMLProfileRequest>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
+			<XMLLogin>http://{{ host }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
+			<XMLLogout>http://{{ host }}/login.live.com/logoutxml.srf</XMLLogout>
+			<MobileXMLLogin>http://{{ host }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
+			<MobileXMLLogout>http://{{ host }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
+			<XMLProfileRequest>http://{{ host }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
 			<XMLRegistration>https://account.live.com/?lcid=1033&amp;dc=XMLRegistration</XMLRegistration>
 			<XMLResetPassword>https://account.live.com/?lcid=1033&amp;dc=XMLResetPassword</XMLResetPassword>
 			<XMLUpdate>https://account.live.com/?lcid=1033&amp;dc=XMLUpdate</XMLUpdate>
-			<LWAAuth>http://{{ ip }}:{{ port }}/login.live.com/wlogin.srf</LWAAuth>
+			<LWAAuth>http://{{ host }}/login.live.com/wlogin.srf</LWAAuth>
 			<MobileServerAuth>https://mid.live.com/si/default.aspx</MobileServerAuth>
 			<MobileServerLogout>https://mid.live.com/si/logout.aspx</MobileServerLogout>
 			<MobileProxy>1</MobileProxy>
-			<MobilePost>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/post.srf</MobilePost>
+			<MobilePost>http://{{ host }}/login.live.com/ppsecure/post.srf</MobilePost>
 			<MobileReg>https://account.live.com/?lcid=1033&amp;dc=MobileReg</MobileReg>
 		</Domain>
 		<Domain Name="hotmail.co.uk" DomainSuffix="hotmail.co.uk">
@@ -1201,9 +1201,9 @@
 			<APIAssociationServerPK>https://api.login.live.com/pksecure/AssociationServerPK.srf</APIAssociationServerPK>
 			<APIAssociationServerWSDL>https://api.login.live.com/AssociationServerWSDL.srf</APIAssociationServerWSDL>
 			<Auth>http://login.live.com/login.srf</Auth>
-			<PPAuth>http://{{ ip }}:{{ port }}/login.live.com/login.srf</PPAuth>
-			<Auth1dot4>http://{{ ip }}:{{ port }}/login.live.com/login2.srf</Auth1dot4>
-			<PPAuthSecure>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
+			<PPAuth>http://{{ host }}/login.live.com/login.srf</PPAuth>
+			<Auth1dot4>http://{{ host }}/login.live.com/login2.srf</Auth1dot4>
+			<PPAuthSecure>http://{{ host }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
 			<AuthZServer>https://api.login.live.com/AuthorizationServer.srf</AuthZServer>
 			<AuthZServerPK>https://api.login.live.com/pksecure/AuthorizationServerPK.srf</AuthZServerPK>
 			<AuthZServerWSDL>https://api.login.live.com/AuthorizationServerWSDL.srf</AuthZServerWSDL>
@@ -1219,16 +1219,16 @@
 			<CookieDomain></CookieDomain>
 			<COPPAPOLICY>http://www.microsoft.com/account/default.aspx</COPPAPOLICY>
 			<COPPARelRequestResponse>https://accountservices.msn.com/ParentsIntro.srf</COPPARelRequestResponse>
-			<CustomerService>http://{{ ip }}:{{ port }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
-			<DAExpireCookie>http://{{ ip }}:{{ port }}/login.live.com/expirecookie.srf</DAExpireCookie>
-			<DigestLogin>http://{{ ip }}:{{ port }}/login.live.com/digest.srf</DigestLogin>
+			<CustomerService>http://{{ host }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
+			<DAExpireCookie>http://{{ host }}/login.live.com/expirecookie.srf</DAExpireCookie>
+			<DigestLogin>http://{{ host }}/login.live.com/digest.srf</DigestLogin>
 			<EditProfile>https://account.live.com/EditProf.aspx</EditProfile>
 			<EmailValidationUI>https://account.live.com/verifysi.aspx?lcid=1033</EmailValidationUI>
-			<HotmailSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
+			<HotmailSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
 			<KidsPassport>https://account.live.com/?lcid=1033&amp;dc=KidsPassport</KidsPassport>
 			<LogoUrl>https://auth.gfx.ms/clientlogo.bmp</LogoUrl>
-			<Logout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</Logout>
-			<PPLogout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</PPLogout>
+			<Logout>http://{{ host }}/login.live.com/logout.srf</Logout>
+			<PPLogout>http://{{ host }}/login.live.com/logout.srf</PPLogout>
 			<MPP>http://profiles.msn.com/</MPP>
 			<MPPEdit>http://profiles.msn.com/Edit.asp?lc=1033</MPPEdit>
 			<MSCDefaultValues>https://clientconfig.passport.net/GetMSCDefaultValues.srf</MSCDefaultValues>
@@ -1241,10 +1241,10 @@
 			<APIPassportSettingsServer>https://api.login.live.com/PPSettingsServer.srf</APIPassportSettingsServer>
 			<APIPassportSettingsServerPK>https://api.login.live.com/pksecure/PPSettingsServerPK.srf</APIPassportSettingsServerPK>
 			<APIPassportSettingsServerWSDL>https://api.login.live.com/PPSettingsServerWSDL.srf</APIPassportSettingsServerWSDL>
-			<PassportSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
-			<PasswordReset>http://{{ ip }}:{{ port }}/login.live.com/resetpw.srf?src=hotmail.com&amp;lc=1033</PasswordReset>
-			<PrivacyPolicy>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
-			<MsaStaticMe>http://{{ ip }}:{{ port }}/login.live.com/Me.htm</MsaStaticMe>
+			<PassportSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
+			<PasswordReset>http://{{ host }}/login.live.com/resetpw.srf?src=hotmail.com&amp;lc=1033</PasswordReset>
+			<PrivacyPolicy>http://{{ host }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
+			<MsaStaticMe>http://{{ host }}/login.live.com/Me.htm</MsaStaticMe>
 			<Registration>https://signup.live.com/signup?lcid=1033</Registration>
 			<MSASignup>https://signup.live.com/signup?lcid=1033</MSASignup>
 			<ServiceAPIAuthZServer>https://api.login.live.com/PPSAAuthz.srf</ServiceAPIAuthZServer>
@@ -1308,19 +1308,19 @@
 			<ServiceClass1RegistrationAuthorityWSDL>https://class1ra.passport.com/Cls1RAWSDL.srf</ServiceClass1RegistrationAuthorityWSDL>
 			<SignoutIconUrl>https://auth.gfx.ms/signouticon.bmp</SignoutIconUrl>
 			<XMLEditPassword>https://account.live.com/?lcid=1033&amp;dc=XMLEditPassword</XMLEditPassword>
-			<XMLLogin>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
-			<XMLLogout>http://{{ ip }}:{{ port }}/login.live.com/logoutxml.srf</XMLLogout>
-			<MobileXMLLogin>http://{{ ip }}:{{ port }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
-			<MobileXMLLogout>http://{{ ip }}:{{ port }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
-			<XMLProfileRequest>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
+			<XMLLogin>http://{{ host }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
+			<XMLLogout>http://{{ host }}/login.live.com/logoutxml.srf</XMLLogout>
+			<MobileXMLLogin>http://{{ host }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
+			<MobileXMLLogout>http://{{ host }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
+			<XMLProfileRequest>http://{{ host }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
 			<XMLRegistration>https://account.live.com/?lcid=1033&amp;dc=XMLRegistration</XMLRegistration>
 			<XMLResetPassword>https://account.live.com/?lcid=1033&amp;dc=XMLResetPassword</XMLResetPassword>
 			<XMLUpdate>https://account.live.com/?lcid=1033&amp;dc=XMLUpdate</XMLUpdate>
-			<LWAAuth>http://{{ ip }}:{{ port }}/login.live.com/wlogin.srf</LWAAuth>
+			<LWAAuth>http://{{ host }}/login.live.com/wlogin.srf</LWAAuth>
 			<MobileServerAuth>https://mid.live.com/si/default.aspx</MobileServerAuth>
 			<MobileServerLogout>https://mid.live.com/si/logout.aspx</MobileServerLogout>
 			<MobileProxy>1</MobileProxy>
-			<MobilePost>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/post.srf</MobilePost>
+			<MobilePost>http://{{ host }}/login.live.com/ppsecure/post.srf</MobilePost>
 			<MobileReg>https://account.live.com/?lcid=1033&amp;dc=MobileReg</MobileReg>
 		</Domain>
 		<Domain Name="hotmail.de" DomainSuffix="hotmail.de">
@@ -1348,9 +1348,9 @@
 			<APIAssociationServerPK>https://api.login.live.com/pksecure/AssociationServerPK.srf</APIAssociationServerPK>
 			<APIAssociationServerWSDL>https://api.login.live.com/AssociationServerWSDL.srf</APIAssociationServerWSDL>
 			<Auth>http://login.live.com/login.srf</Auth>
-			<PPAuth>http://{{ ip }}:{{ port }}/login.live.com/login.srf</PPAuth>
-			<Auth1dot4>http://{{ ip }}:{{ port }}/login.live.com/login2.srf</Auth1dot4>
-			<PPAuthSecure>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
+			<PPAuth>http://{{ host }}/login.live.com/login.srf</PPAuth>
+			<Auth1dot4>http://{{ host }}/login.live.com/login2.srf</Auth1dot4>
+			<PPAuthSecure>http://{{ host }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
 			<AuthZServer>https://api.login.live.com/AuthorizationServer.srf</AuthZServer>
 			<AuthZServerPK>https://api.login.live.com/pksecure/AuthorizationServerPK.srf</AuthZServerPK>
 			<AuthZServerWSDL>https://api.login.live.com/AuthorizationServerWSDL.srf</AuthZServerWSDL>
@@ -1366,16 +1366,16 @@
 			<CookieDomain></CookieDomain>
 			<COPPAPOLICY>http://www.microsoft.com/account/default.aspx</COPPAPOLICY>
 			<COPPARelRequestResponse>https://accountservices.msn.com/ParentsIntro.srf</COPPARelRequestResponse>
-			<CustomerService>http://{{ ip }}:{{ port }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
-			<DAExpireCookie>http://{{ ip }}:{{ port }}/login.live.com/expirecookie.srf</DAExpireCookie>
-			<DigestLogin>http://{{ ip }}:{{ port }}/login.live.com/digest.srf</DigestLogin>
+			<CustomerService>http://{{ host }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
+			<DAExpireCookie>http://{{ host }}/login.live.com/expirecookie.srf</DAExpireCookie>
+			<DigestLogin>http://{{ host }}/login.live.com/digest.srf</DigestLogin>
 			<EditProfile>https://account.live.com/EditProf.aspx</EditProfile>
 			<EmailValidationUI>https://account.live.com/verifysi.aspx?lcid=1033</EmailValidationUI>
-			<HotmailSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
+			<HotmailSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
 			<KidsPassport>https://account.live.com/?lcid=1033&amp;dc=KidsPassport</KidsPassport>
 			<LogoUrl>https://auth.gfx.ms/clientlogo.bmp</LogoUrl>
-			<Logout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</Logout>
-			<PPLogout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</PPLogout>
+			<Logout>http://{{ host }}/login.live.com/logout.srf</Logout>
+			<PPLogout>http://{{ host }}/login.live.com/logout.srf</PPLogout>
 			<MPP>http://profiles.msn.com/</MPP>
 			<MPPEdit>http://profiles.msn.com/Edit.asp?lc=1033</MPPEdit>
 			<MSCDefaultValues>https://clientconfig.passport.net/GetMSCDefaultValues.srf</MSCDefaultValues>
@@ -1388,10 +1388,10 @@
 			<APIPassportSettingsServer>https://api.login.live.com/PPSettingsServer.srf</APIPassportSettingsServer>
 			<APIPassportSettingsServerPK>https://api.login.live.com/pksecure/PPSettingsServerPK.srf</APIPassportSettingsServerPK>
 			<APIPassportSettingsServerWSDL>https://api.login.live.com/PPSettingsServerWSDL.srf</APIPassportSettingsServerWSDL>
-			<PassportSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
-			<PasswordReset>http://{{ ip }}:{{ port }}/login.live.com/resetpw.srf?src=hotmail.com&amp;lc=1033</PasswordReset>
-			<PrivacyPolicy>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
-			<MsaStaticMe>http://{{ ip }}:{{ port }}/login.live.com/Me.htm</MsaStaticMe>
+			<PassportSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
+			<PasswordReset>http://{{ host }}/login.live.com/resetpw.srf?src=hotmail.com&amp;lc=1033</PasswordReset>
+			<PrivacyPolicy>http://{{ host }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
+			<MsaStaticMe>http://{{ host }}/login.live.com/Me.htm</MsaStaticMe>
 			<Registration>https://signup.live.com/signup?lcid=1033</Registration>
 			<MSASignup>https://signup.live.com/signup?lcid=1033</MSASignup>
 			<ServiceAPIAuthZServer>https://api.login.live.com/PPSAAuthz.srf</ServiceAPIAuthZServer>
@@ -1455,19 +1455,19 @@
 			<ServiceClass1RegistrationAuthorityWSDL>https://class1ra.passport.com/Cls1RAWSDL.srf</ServiceClass1RegistrationAuthorityWSDL>
 			<SignoutIconUrl>https://auth.gfx.ms/signouticon.bmp</SignoutIconUrl>
 			<XMLEditPassword>https://account.live.com/?lcid=1033&amp;dc=XMLEditPassword</XMLEditPassword>
-			<XMLLogin>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
-			<XMLLogout>http://{{ ip }}:{{ port }}/login.live.com/logoutxml.srf</XMLLogout>
-			<MobileXMLLogin>http://{{ ip }}:{{ port }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
-			<MobileXMLLogout>http://{{ ip }}:{{ port }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
-			<XMLProfileRequest>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
+			<XMLLogin>http://{{ host }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
+			<XMLLogout>http://{{ host }}/login.live.com/logoutxml.srf</XMLLogout>
+			<MobileXMLLogin>http://{{ host }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
+			<MobileXMLLogout>http://{{ host }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
+			<XMLProfileRequest>http://{{ host }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
 			<XMLRegistration>https://account.live.com/?lcid=1033&amp;dc=XMLRegistration</XMLRegistration>
 			<XMLResetPassword>https://account.live.com/?lcid=1033&amp;dc=XMLResetPassword</XMLResetPassword>
 			<XMLUpdate>https://account.live.com/?lcid=1033&amp;dc=XMLUpdate</XMLUpdate>
-			<LWAAuth>http://{{ ip }}:{{ port }}/login.live.com/wlogin.srf</LWAAuth>
+			<LWAAuth>http://{{ host }}/login.live.com/wlogin.srf</LWAAuth>
 			<MobileServerAuth>https://mid.live.com/si/default.aspx</MobileServerAuth>
 			<MobileServerLogout>https://mid.live.com/si/logout.aspx</MobileServerLogout>
 			<MobileProxy>1</MobileProxy>
-			<MobilePost>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/post.srf</MobilePost>
+			<MobilePost>http://{{ host }}/login.live.com/ppsecure/post.srf</MobilePost>
 			<MobileReg>https://account.live.com/?lcid=1033&amp;dc=MobileReg</MobileReg>
 		</Domain>
 		<Domain Name="hotmail.fr" DomainSuffix="hotmail.fr">
@@ -1495,9 +1495,9 @@
 			<APIAssociationServerPK>https://api.login.live.com/pksecure/AssociationServerPK.srf</APIAssociationServerPK>
 			<APIAssociationServerWSDL>https://api.login.live.com/AssociationServerWSDL.srf</APIAssociationServerWSDL>
 			<Auth>http://login.live.com/login.srf</Auth>
-			<PPAuth>http://{{ ip }}:{{ port }}/login.live.com/login.srf</PPAuth>
-			<Auth1dot4>http://{{ ip }}:{{ port }}/login.live.com/login2.srf</Auth1dot4>
-			<PPAuthSecure>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
+			<PPAuth>http://{{ host }}/login.live.com/login.srf</PPAuth>
+			<Auth1dot4>http://{{ host }}/login.live.com/login2.srf</Auth1dot4>
+			<PPAuthSecure>http://{{ host }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
 			<AuthZServer>https://api.login.live.com/AuthorizationServer.srf</AuthZServer>
 			<AuthZServerPK>https://api.login.live.com/pksecure/AuthorizationServerPK.srf</AuthZServerPK>
 			<AuthZServerWSDL>https://api.login.live.com/AuthorizationServerWSDL.srf</AuthZServerWSDL>
@@ -1513,16 +1513,16 @@
 			<CookieDomain></CookieDomain>
 			<COPPAPOLICY>http://www.microsoft.com/account/default.aspx</COPPAPOLICY>
 			<COPPARelRequestResponse>https://accountservices.msn.com/ParentsIntro.srf</COPPARelRequestResponse>
-			<CustomerService>http://{{ ip }}:{{ port }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
-			<DAExpireCookie>http://{{ ip }}:{{ port }}/login.live.com/expirecookie.srf</DAExpireCookie>
-			<DigestLogin>http://{{ ip }}:{{ port }}/login.live.com/digest.srf</DigestLogin>
+			<CustomerService>http://{{ host }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
+			<DAExpireCookie>http://{{ host }}/login.live.com/expirecookie.srf</DAExpireCookie>
+			<DigestLogin>http://{{ host }}/login.live.com/digest.srf</DigestLogin>
 			<EditProfile>https://account.live.com/EditProf.aspx</EditProfile>
 			<EmailValidationUI>https://account.live.com/verifysi.aspx?lcid=1033</EmailValidationUI>
-			<HotmailSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
+			<HotmailSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
 			<KidsPassport>https://account.live.com/?lcid=1033&amp;dc=KidsPassport</KidsPassport>
 			<LogoUrl>https://auth.gfx.ms/clientlogo.bmp</LogoUrl>
-			<Logout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</Logout>
-			<PPLogout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</PPLogout>
+			<Logout>http://{{ host }}/login.live.com/logout.srf</Logout>
+			<PPLogout>http://{{ host }}/login.live.com/logout.srf</PPLogout>
 			<MPP>http://profiles.msn.com/</MPP>
 			<MPPEdit>http://profiles.msn.com/Edit.asp?lc=1033</MPPEdit>
 			<MSCDefaultValues>https://clientconfig.passport.net/GetMSCDefaultValues.srf</MSCDefaultValues>
@@ -1535,10 +1535,10 @@
 			<APIPassportSettingsServer>https://api.login.live.com/PPSettingsServer.srf</APIPassportSettingsServer>
 			<APIPassportSettingsServerPK>https://api.login.live.com/pksecure/PPSettingsServerPK.srf</APIPassportSettingsServerPK>
 			<APIPassportSettingsServerWSDL>https://api.login.live.com/PPSettingsServerWSDL.srf</APIPassportSettingsServerWSDL>
-			<PassportSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
-			<PasswordReset>http://{{ ip }}:{{ port }}/login.live.com/resetpw.srf?src=hotmail.com&amp;lc=1033</PasswordReset>
-			<PrivacyPolicy>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
-			<MsaStaticMe>http://{{ ip }}:{{ port }}/login.live.com/Me.htm</MsaStaticMe>
+			<PassportSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
+			<PasswordReset>http://{{ host }}/login.live.com/resetpw.srf?src=hotmail.com&amp;lc=1033</PasswordReset>
+			<PrivacyPolicy>http://{{ host }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
+			<MsaStaticMe>http://{{ host }}/login.live.com/Me.htm</MsaStaticMe>
 			<Registration>https://signup.live.com/signup?lcid=1033</Registration>
 			<MSASignup>https://signup.live.com/signup?lcid=1033</MSASignup>
 			<ServiceAPIAuthZServer>https://api.login.live.com/PPSAAuthz.srf</ServiceAPIAuthZServer>
@@ -1602,19 +1602,19 @@
 			<ServiceClass1RegistrationAuthorityWSDL>https://class1ra.passport.com/Cls1RAWSDL.srf</ServiceClass1RegistrationAuthorityWSDL>
 			<SignoutIconUrl>https://auth.gfx.ms/signouticon.bmp</SignoutIconUrl>
 			<XMLEditPassword>https://account.live.com/?lcid=1033&amp;dc=XMLEditPassword</XMLEditPassword>
-			<XMLLogin>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
-			<XMLLogout>http://{{ ip }}:{{ port }}/login.live.com/logoutxml.srf</XMLLogout>
-			<MobileXMLLogin>http://{{ ip }}:{{ port }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
-			<MobileXMLLogout>http://{{ ip }}:{{ port }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
-			<XMLProfileRequest>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
+			<XMLLogin>http://{{ host }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
+			<XMLLogout>http://{{ host }}/login.live.com/logoutxml.srf</XMLLogout>
+			<MobileXMLLogin>http://{{ host }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
+			<MobileXMLLogout>http://{{ host }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
+			<XMLProfileRequest>http://{{ host }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
 			<XMLRegistration>https://account.live.com/?lcid=1033&amp;dc=XMLRegistration</XMLRegistration>
 			<XMLResetPassword>https://account.live.com/?lcid=1033&amp;dc=XMLResetPassword</XMLResetPassword>
 			<XMLUpdate>https://account.live.com/?lcid=1033&amp;dc=XMLUpdate</XMLUpdate>
-			<LWAAuth>http://{{ ip }}:{{ port }}/login.live.com/wlogin.srf</LWAAuth>
+			<LWAAuth>http://{{ host }}/login.live.com/wlogin.srf</LWAAuth>
 			<MobileServerAuth>https://mid.live.com/si/default.aspx</MobileServerAuth>
 			<MobileServerLogout>https://mid.live.com/si/logout.aspx</MobileServerLogout>
 			<MobileProxy>1</MobileProxy>
-			<MobilePost>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/post.srf</MobilePost>
+			<MobilePost>http://{{ host }}/login.live.com/ppsecure/post.srf</MobilePost>
 			<MobileReg>https://account.live.com/?lcid=1033&amp;dc=MobileReg</MobileReg>
 		</Domain>
 		<Domain Name="hotmail.it" DomainSuffix="hotmail.it">
@@ -1642,9 +1642,9 @@
 			<APIAssociationServerPK>https://api.login.live.com/pksecure/AssociationServerPK.srf</APIAssociationServerPK>
 			<APIAssociationServerWSDL>https://api.login.live.com/AssociationServerWSDL.srf</APIAssociationServerWSDL>
 			<Auth>http://login.live.com/login.srf</Auth>
-			<PPAuth>http://{{ ip }}:{{ port }}/login.live.com/login.srf</PPAuth>
-			<Auth1dot4>http://{{ ip }}:{{ port }}/login.live.com/login2.srf</Auth1dot4>
-			<PPAuthSecure>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
+			<PPAuth>http://{{ host }}/login.live.com/login.srf</PPAuth>
+			<Auth1dot4>http://{{ host }}/login.live.com/login2.srf</Auth1dot4>
+			<PPAuthSecure>http://{{ host }}/login.live.com/ppsecure/secure.srf</PPAuthSecure>
 			<AuthZServer>https://api.login.live.com/AuthorizationServer.srf</AuthZServer>
 			<AuthZServerPK>https://api.login.live.com/pksecure/AuthorizationServerPK.srf</AuthZServerPK>
 			<AuthZServerWSDL>https://api.login.live.com/AuthorizationServerWSDL.srf</AuthZServerWSDL>
@@ -1660,16 +1660,16 @@
 			<CookieDomain></CookieDomain>
 			<COPPAPOLICY>http://www.microsoft.com/account/default.aspx</COPPAPOLICY>
 			<COPPARelRequestResponse>https://accountservices.msn.com/ParentsIntro.srf</COPPARelRequestResponse>
-			<CustomerService>http://{{ ip }}:{{ port }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
-			<DAExpireCookie>http://{{ ip }}:{{ port }}/login.live.com/expirecookie.srf</DAExpireCookie>
-			<DigestLogin>http://{{ ip }}:{{ port }}/login.live.com/digest.srf</DigestLogin>
+			<CustomerService>http://{{ host }}/login.live.com/gls.srf&amp;urlID=ContactUs</CustomerService>
+			<DAExpireCookie>http://{{ host }}/login.live.com/expirecookie.srf</DAExpireCookie>
+			<DigestLogin>http://{{ host }}/login.live.com/digest.srf</DigestLogin>
 			<EditProfile>https://account.live.com/EditProf.aspx</EditProfile>
 			<EmailValidationUI>https://account.live.com/verifysi.aspx?lcid=1033</EmailValidationUI>
-			<HotmailSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
+			<HotmailSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUs&amp;lc=1033</HotmailSupport>
 			<KidsPassport>https://account.live.com/?lcid=1033&amp;dc=KidsPassport</KidsPassport>
 			<LogoUrl>https://auth.gfx.ms/clientlogo.bmp</LogoUrl>
-			<Logout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</Logout>
-			<PPLogout>http://{{ ip }}:{{ port }}/login.live.com/logout.srf</PPLogout>
+			<Logout>http://{{ host }}/login.live.com/logout.srf</Logout>
+			<PPLogout>http://{{ host }}/login.live.com/logout.srf</PPLogout>
 			<MPP>http://profiles.msn.com/</MPP>
 			<MPPEdit>http://profiles.msn.com/Edit.asp?lc=1033</MPPEdit>
 			<MSCDefaultValues>https://clientconfig.passport.net/GetMSCDefaultValues.srf</MSCDefaultValues>
@@ -1682,10 +1682,10 @@
 			<APIPassportSettingsServer>https://api.login.live.com/PPSettingsServer.srf</APIPassportSettingsServer>
 			<APIPassportSettingsServerPK>https://api.login.live.com/pksecure/PPSettingsServerPK.srf</APIPassportSettingsServerPK>
 			<APIPassportSettingsServerWSDL>https://api.login.live.com/PPSettingsServerWSDL.srf</APIPassportSettingsServerWSDL>
-			<PassportSupport>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
-			<PasswordReset>http://{{ ip }}:{{ port }}/login.live.com/resetpw.srf?src=hotmail.com&amp;lc=1033</PasswordReset>
-			<PrivacyPolicy>http://{{ ip }}:{{ port }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
-			<MsaStaticMe>http://{{ ip }}:{{ port }}/login.live.com/Me.htm</MsaStaticMe>
+			<PassportSupport>http://{{ host }}/login.live.com/gls.srf?urlID=contactUsPPN&amp;lc=1033</PassportSupport>
+			<PasswordReset>http://{{ host }}/login.live.com/resetpw.srf?src=hotmail.com&amp;lc=1033</PasswordReset>
+			<PrivacyPolicy>http://{{ host }}/login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;lc=1033</PrivacyPolicy>
+			<MsaStaticMe>http://{{ host }}/login.live.com/Me.htm</MsaStaticMe>
 			<Registration>https://signup.live.com/signup?lcid=1033</Registration>
 			<MSASignup>https://signup.live.com/signup?lcid=1033</MSASignup>
 			<ServiceAPIAuthZServer>https://api.login.live.com/PPSAAuthz.srf</ServiceAPIAuthZServer>
@@ -1749,19 +1749,19 @@
 			<ServiceClass1RegistrationAuthorityWSDL>https://class1ra.passport.com/Cls1RAWSDL.srf</ServiceClass1RegistrationAuthorityWSDL>
 			<SignoutIconUrl>https://auth.gfx.ms/signouticon.bmp</SignoutIconUrl>
 			<XMLEditPassword>https://account.live.com/?lcid=1033&amp;dc=XMLEditPassword</XMLEditPassword>
-			<XMLLogin>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
-			<XMLLogout>http://{{ ip }}:{{ port }}/login.live.com/logoutxml.srf</XMLLogout>
-			<MobileXMLLogin>http://{{ ip }}:{{ port }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
-			<MobileXMLLogout>http://{{ ip }}:{{ port }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
-			<XMLProfileRequest>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
+			<XMLLogin>http://{{ host }}/login.live.com/ppsecure/clientpost.srf</XMLLogin>
+			<XMLLogout>http://{{ host }}/login.live.com/logoutxml.srf</XMLLogout>
+			<MobileXMLLogin>http://{{ host }}/login.live.com/mobilelogin.srf</MobileXMLLogin>
+			<MobileXMLLogout>http://{{ host }}/login.live.com/mobilelogout.srf</MobileXMLLogout>
+			<XMLProfileRequest>http://{{ host }}/login.live.com/ppsecure/ClientProfileRequest.srf</XMLProfileRequest>
 			<XMLRegistration>https://account.live.com/?lcid=1033&amp;dc=XMLRegistration</XMLRegistration>
 			<XMLResetPassword>https://account.live.com/?lcid=1033&amp;dc=XMLResetPassword</XMLResetPassword>
 			<XMLUpdate>https://account.live.com/?lcid=1033&amp;dc=XMLUpdate</XMLUpdate>
-			<LWAAuth>http://{{ ip }}:{{ port }}/login.live.com/wlogin.srf</LWAAuth>
+			<LWAAuth>http://{{ host }}/login.live.com/wlogin.srf</LWAAuth>
 			<MobileServerAuth>https://mid.live.com/si/default.aspx</MobileServerAuth>
 			<MobileServerLogout>https://mid.live.com/si/logout.aspx</MobileServerLogout>
 			<MobileProxy>1</MobileProxy>
-			<MobilePost>http://{{ ip }}:{{ port }}/login.live.com/ppsecure/post.srf</MobilePost>
+			<MobilePost>http://{{ host }}/login.live.com/ppsecure/post.srf</MobilePost>
 			<MobileReg>https://account.live.com/?lcid=1033&amp;dc=MobileReg</MobileReg>
 		</Domain>
 	</PassportNetwork>

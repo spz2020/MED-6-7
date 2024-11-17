@@ -1,11 +1,13 @@
 from flask import Flask, render_template, request
 import xml.etree.ElementTree as ET
 import sqlite3
+import socket
 
 app = Flask(__name__)
 
 @app.route("/login.live.com/ppsecure/clientpost.srf", methods=['POST'])
 def clientpost():
+     host = gethost()
      content_type = request.headers.get("Content-Type")
      if content_type == "text/xml":
         xml_data = request.data
@@ -20,7 +22,7 @@ def clientpost():
              ''', (sign_in_name, password))
             result = cursor.fetchone()
             if result:
-               return render_template('clientpost.srf',ip=ip, port=port)
+               return render_template('clientpost.srf',host=host)
             else:
                return '<?xml version="1.0" encoding="utf-8"?><LoginResponse Success="false"></LoginResponse>'
         except ET.ParseError as e:
@@ -50,7 +52,8 @@ def ClientProfileRequest():
      
 @app.route("/nexus.passport.com/client/client.xml")
 def client():
-    return render_template('client.xml',ip=ip, port=port)
+    host = gethost()
+    return render_template('client.xml', host=host)
 
 @app.route("/login.live.com/logoutxml.srfl")
 def logoutxml():
@@ -60,7 +63,9 @@ def logoutxml():
 def hello():
     return 'Hello, World!'
     
+def gethost():
+    host = request.headers.get('host')
+    return host
+
 if __name__ == "__main__":
-    ip = "192.168.10.104"
-    port = 5000
     app.run(host="0.0.0.0")
