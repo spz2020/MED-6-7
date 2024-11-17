@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
 import xml.etree.ElementTree as ET
 import sqlite3
-import socket
 
 app = Flask(__name__)
 
