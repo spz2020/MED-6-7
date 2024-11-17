@@ -14,7 +14,7 @@ def clientpost():
             root = ET.fromstring(xml_data)
             sign_in_name = root.find('.//SignInName').text
             password = root.find('.//Password').text
-            with sqlite3.connect('user_system.db') as conn:
+            with sqlite3.connect('database/user_system.db') as conn:
               cursor = conn.cursor()
               cursor.execute('''
                SELECT * FROM users WHERE email = ? AND password = ?
@@ -36,7 +36,7 @@ def ClientProfileRequest():
             root = ET.fromstring(xml_data)
             sign_in_name = root.find('.//SignInName').text
             password = root.find('.//Password').text
-            with sqlite3.connect('user_system.db') as conn:
+            with sqlite3.connect('database/user_system.db') as conn:
               cursor = conn.cursor()
               cursor.execute('''
                SELECT * FROM users WHERE email = ? AND password = ?
