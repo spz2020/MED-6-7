@@ -8,7 +8,6 @@ app = Flask(__name__)
 def clientpost():
      content_type = request.headers.get("Content-Type")
      if content_type == "text/xml":
-        # 读取原始的 XML 数据
         xml_data = request.data
         try:
             root = ET.fromstring(xml_data)
@@ -53,7 +52,11 @@ def ClientProfileRequest():
 def client():
     return render_template('client.xml',ip=ip, port=port)
 
-@app.route("/hello")
+@app.route("/login.live.com/logoutxml.srfl")
+def logoutxml():
+    return render_template('logoutxml.srf')
+
+@app.route("/dummy")
 def hello():
     return 'Hello, World!'
     
