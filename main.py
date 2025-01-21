@@ -54,7 +54,7 @@ def client():
     host = gethost()
     return render_template('client.xml', host=host)
 
-@app.route("/login.live.com/logoutxml.srfl")
+@app.route("/login.live.com/logoutxml.srf")
 def logoutxml():
     return render_template('logoutxml.srf')
 
